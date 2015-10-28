@@ -40,7 +40,7 @@ mentionid serial PRIMARY KEY,
 tid integer REFERENCES tweet(tid), 
 userid integer REFERENCES users(userid)
 );
-%%%%%the user cannot retweet his own tweet
+----%%%%%the user cannot retweet his own tweet
 CREATE TABLE retweet(
 id serial PRIMARY KEY,
 tid integer REFERENCES tweet(tid),
@@ -52,7 +52,7 @@ followerid serial PRIMARY KEY,
 userid integer REFERENCES users(userid),
 friendid integer NOT NULL CHECK ( friendid > userid OR userid > friendid)
 );
-%%%%% the user can favorite his own tweets
+---%%%%% the user can favorite his own tweets
 CREATE TABLE favorite(
 favoriteid serial PRIMARY KEY,
 userid integer REFERENCES users(userid),
