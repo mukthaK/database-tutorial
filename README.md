@@ -1,6 +1,7 @@
 # database-tutorial
 #ADB assignments
 Under this folder, the materials and scripts are based on the courses "Advanced Database" from DMKM program.
+
 It contains:
 1. SQL basic
   - write the SQL scripts to do exercises on DDL of SQL and DML of SQL
